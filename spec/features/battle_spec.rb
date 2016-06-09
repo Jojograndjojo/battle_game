@@ -3,7 +3,7 @@ require 'spec_helper'
 feature "fill in players names" do
 	scenario "players enter their names" do
 		sign_in_and_play
-		expect(page).to have_content "name1 vs name2"
+		expect(page).to have_content "name1 and name2 enter the arena"
 	end
 end
 
@@ -13,3 +13,4 @@ feature "viewing players hit points" do
     expect(page).to have_content 'name2 has 50 points, name1 has 50 points'
   end
 end
+
